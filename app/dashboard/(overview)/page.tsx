@@ -6,6 +6,11 @@ import { fetchLatestInvoices, fetchCardData } from '@/app/lib/data';
 import CardWrapper from '@/app/ui/dashboard/cards';
 import { Suspense} from 'react';
 import { RevenueChartSkeleton, LatestInvoicesSkeleton, CardsSkeleton, CardSkeleton } from '@/app/ui/skeletons';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Main Dashboard',
+}
  
 export default async function Page() {
     {/* The await is VERY important so the code knows what to do with it.*/}
